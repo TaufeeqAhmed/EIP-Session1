@@ -1,0 +1,9 @@
+Important terms and their definitions.
+Convolution: It is the process in which a kernel which is generally a 3x3 matrix is multiplied (scalar) with pixel of an image of size similar to the kernel. The summation of the elements of the dot product of the matrices is mapped to a single value of the output image. The above process is repeated for the entire image while moving the kernel 1 pixel at a time and the results stored at the corresponding positions in the output image. 
+Filters/Kernels: These are matrices of size 3x3, 1x1 or generally of odd size. Kernels are used to extract features from an image by using convolution. Kernels and convolutions is also used to reduce the size of an image, to reduce the number of channels.
+Epochs: One epoch is equivalent to one pass through the entire collection of image dataset. An epoch is divided into batches of equal size.
+1x1 Convolution: The 1x1 matrix is usually used to reduce the number of channels in an intermediate layer. For example an 32x32x64 image which comprises of 64 channels can be reduced to 32 channels by convolving with 1x1x64x32.
+3x3 Convolution: It a convolution operation in which the kernel used will be of 3x3 size. It is generally used to extract information from an image. If the original image is of nxn size then after the 3x3 convolution the output image will be of size (n-1)x(n-1).
+Feature Maps: This is collection of all the features which can be obtained or combined to form complex patterns. It is equivalent to the alphabets of a language.
+Activation Function: It is a function which is used to activate the neurons to pass the information (features) from the input layers to the output layers.
+Receptive Field: It is the portion of the original image that one pixel or position on the output image corresponds. Local Receptive field is the receptive field of intermediate layers of the NN. The RF increase by 2 at each layer starting with 3x3 at the first layer.
