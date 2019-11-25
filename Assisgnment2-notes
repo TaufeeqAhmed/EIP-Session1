@@ -1,2 +1,99 @@
 Assisgnment-2 Notes
 
+1) Logs
+
+Train on 60000 samples, validate on 10000 samples
+Epoch 1/20
+
+Epoch 00001: LearningRateScheduler setting learning rate to 0.003.
+60000/60000 [==============================] - 11s 181us/step - loss: 0.5321 - acc: 0.8512 - val_loss: 0.0886 - val_acc: 0.9822
+Epoch 2/20
+
+Epoch 00002: LearningRateScheduler setting learning rate to 0.0022744503.
+60000/60000 [==============================] - 6s 98us/step - loss: 0.2501 - acc: 0.9270 - val_loss: 0.1051 - val_acc: 0.9748
+Epoch 3/20
+
+Epoch 00003: LearningRateScheduler setting learning rate to 0.0018315018.
+60000/60000 [==============================] - 6s 98us/step - loss: 0.1996 - acc: 0.9400 - val_loss: 0.0446 - val_acc: 0.9901
+Epoch 4/20
+
+Epoch 00004: LearningRateScheduler setting learning rate to 0.0015329586.
+60000/60000 [==============================] - 6s 96us/step - loss: 0.1714 - acc: 0.9458 - val_loss: 0.0381 - val_acc: 0.9918
+Epoch 5/20
+
+Epoch 00005: LearningRateScheduler setting learning rate to 0.0013181019.
+60000/60000 [==============================] - 6s 97us/step - loss: 0.1494 - acc: 0.9506 - val_loss: 0.0337 - val_acc: 0.9910
+Epoch 6/20
+
+Epoch 00006: LearningRateScheduler setting learning rate to 0.0011560694.
+60000/60000 [==============================] - 6s 97us/step - loss: 0.1401 - acc: 0.9509 - val_loss: 0.0314 - val_acc: 0.9928
+Epoch 7/20
+
+Epoch 00007: LearningRateScheduler setting learning rate to 0.0010295127.
+60000/60000 [==============================] - 6s 97us/step - loss: 0.1287 - acc: 0.9526 - val_loss: 0.0253 - val_acc: 0.9933
+Epoch 8/20
+
+Epoch 00008: LearningRateScheduler setting learning rate to 0.0009279307.
+60000/60000 [==============================] - 6s 98us/step - loss: 0.1234 - acc: 0.9540 - val_loss: 0.0265 - val_acc: 0.9937
+Epoch 9/20
+
+Epoch 00009: LearningRateScheduler setting learning rate to 0.0008445946.
+60000/60000 [==============================] - 6s 99us/step - loss: 0.1203 - acc: 0.9535 - val_loss: 0.0257 - val_acc: 0.9932
+Epoch 10/20
+
+Epoch 00010: LearningRateScheduler setting learning rate to 0.0007749935.
+60000/60000 [==============================] - 6s 99us/step - loss: 0.1127 - acc: 0.9548 - val_loss: 0.0248 - val_acc: 0.9921
+Epoch 11/20
+
+Epoch 00011: LearningRateScheduler setting learning rate to 0.0007159905.
+60000/60000 [==============================] - 6s 99us/step - loss: 0.1118 - acc: 0.9551 - val_loss: 0.0214 - val_acc: 0.9937
+Epoch 12/20
+
+Epoch 00012: LearningRateScheduler setting learning rate to 0.000665336.
+60000/60000 [==============================] - 6s 97us/step - loss: 0.1063 - acc: 0.9545 - val_loss: 0.0213 - val_acc: 0.9945
+Epoch 13/20
+
+Epoch 00013: LearningRateScheduler setting learning rate to 0.0006213753.
+60000/60000 [==============================] - 6s 97us/step - loss: 0.1032 - acc: 0.9560 - val_loss: 0.0210 - val_acc: 0.9939
+Epoch 14/20
+
+Epoch 00014: LearningRateScheduler setting learning rate to 0.0005828638.
+60000/60000 [==============================] - 6s 98us/step - loss: 0.1003 - acc: 0.9579 - val_loss: 0.0199 - val_acc: 0.9943
+Epoch 15/20
+
+Epoch 00015: LearningRateScheduler setting learning rate to 0.0005488474.
+60000/60000 [==============================] - 6s 99us/step - loss: 0.1007 - acc: 0.9561 - val_loss: 0.0201 - val_acc: 0.9948
+Epoch 16/20
+
+Epoch 00016: LearningRateScheduler setting learning rate to 0.0005185825.
+60000/60000 [==============================] - 6s 100us/step - loss: 0.0967 - acc: 0.9568 - val_loss: 0.0203 - val_acc: 0.9937
+Epoch 17/20
+
+Epoch 00017: LearningRateScheduler setting learning rate to 0.000491481.
+60000/60000 [==============================] - 6s 97us/step - loss: 0.0984 - acc: 0.9563 - val_loss: 0.0202 - val_acc: 0.9939
+Epoch 18/20
+
+Epoch 00018: LearningRateScheduler setting learning rate to 0.0004670715.
+60000/60000 [==============================] - 6s 97us/step - loss: 0.0941 - acc: 0.9580 - val_loss: 0.0186 - val_acc: 0.9948
+Epoch 19/20
+
+Epoch 00019: LearningRateScheduler setting learning rate to 0.0004449718.
+60000/60000 [==============================] - 6s 96us/step - loss: 0.0928 - acc: 0.9582 - val_loss: 0.0226 - val_acc: 0.9940
+Epoch 20/20
+
+Epoch 00020: LearningRateScheduler setting learning rate to 0.000424869.
+60000/60000 [==============================] - 6s 96us/step - loss: 0.0938 - acc: 0.9568 - val_loss: 0.0187 - val_acc: 0.9949
+<keras.callbacks.History at 0x7f650ab0c940>
+
+__________________________________________________________________________________
+2) Score - 99.49
+
+________________________________________________________________________________
+
+3) C. Strategy:
+
+The parameter count of below 15000 is achieved by reducing numer of channels from 32 to 16 in Layer 2 in First Conv Block.
+
+
+
+
