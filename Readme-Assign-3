@@ -1,26 +1,27 @@
 1) Final Validation accuracy for Base Network - 
-Accuracy on test data is: 83.04
+Accuracy for the Given network: 82.43
+Accuracy for the modified network: 82.76
 
-2) Your model definition (model.add... ) with output channel size and receptive field
+2) Model definition (model.add... ) with output channel size and receptive field
 # Define the model
 model = Sequential()
-model.add(Convolution2D(48, 3, 3, border_mode='same', input_shape=(32, 32, 3))) # 32x32x48
+model.add(Convolution2D(48, 3, 3, border_mode='same', input_shape=(32, 32, 3))) # 32x32x48 #RF 3x3
 model.add(Activation('relu'))
-model.add(Convolution2D(48, 3, 3))  # 30x30x48
+model.add(Convolution2D(48, 3, 3))  # 30x30x48 #RF 5x5
 model.add(Activation('relu'))
-model.add(MaxPooling2D(pool_size=(2, 2))) # 15x15x48
+model.add(MaxPooling2D(pool_size=(2, 2))) # 15x15x48 #RF 10x10
 model.add(Dropout(0.25))
-model.add(Convolution2D(96, 3, 3, border_mode='same')) #15x15x96 Keeping padding same
+model.add(Convolution2D(96, 3, 3, border_mode='same')) #15x15x96 Keeping padding same #RF 12x12
 model.add(Activation('relu'))
-model.add(Convolution2D(96, 3, 3))  # 13x13x96
+model.add(Convolution2D(96, 3, 3))  # 13x13x96 #RF 14x14
 model.add(Activation('relu'))
-model.add(MaxPooling2D(pool_size=(2, 2)))  # 6x6x96
+model.add(MaxPooling2D(pool_size=(2, 2)))  # 6x6x96 #RF 28x28
 model.add(Dropout(0.25))
-model.add(Convolution2D(192, 3, 3, border_mode='same')) #6x6x192 Keeping padding same
+model.add(Convolution2D(192, 3, 3, border_mode='same')) #6x6x192 Keeping padding same #RF 30x30
 model.add(Activation('relu'))
-model.add(Convolution2D(192, 3, 3))  # 4x4x192 
+model.add(Convolution2D(192, 3, 3))  # 4x4x192 #RF 32x32
 model.add(Activation('relu'))
-model.add(MaxPooling2D(pool_size=(2, 2))) #2x2x192
+model.add(MaxPooling2D(pool_size=(2, 2))) #2x2x192 
 model.add(Dropout(0.25))
 model.add(Flatten())  # 4x198 = 768
 model.add(Dense(512))  # 512 fully connected layers
@@ -32,7 +33,8 @@ model.add(Dropout(0.5))
 model.add(Dense(num_classes, activation='softmax')) # 10 fully connected layers equal to number of classes
 # Compile the model
 model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
-3) Your 50 epoch logs
+
+3) 50 epoch logs
 390/390 [==============================] - 29s 73ms/step - loss: 1.8639 - acc: 0.2853 - val_loss: 1.4656 - val_acc: 0.4531
 Epoch 2/50
 390/390 [==============================] - 20s 52ms/step - loss: 1.3496 - acc: 0.5119 - val_loss: 1.1215 - val_acc: 0.5987
@@ -133,3 +135,8 @@ Epoch 49/50
 Epoch 50/50
 390/390 [==============================] - 20s 51ms/step - loss: 0.3050 - acc: 0.8996 - val_loss: 0.6003 - val_acc: 0.8304
 Model took 1005.04 seconds to train
+
+4) Parameters Used
+Total params: 84,277
+Trainable params: 82,933
+Non-trainable params: 1,344
